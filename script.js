@@ -15,8 +15,8 @@ function btnEncriptar() {
 }
 
 function encriptar(stringEncriptada) {
-    const stringEncriptada = matrizCodigo.reduce((acc, [letra, codigo]) => acc.replaceAll(letra, codigo), inputTexto.value.toLowerCase());
-
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o","ober"], ["u","ufat"]];
+    stringEncriptada = stringEncriptada.toLowerCase();
 
     for(let i=0; i < matrizCodigo.length; i++) {
         if(stringEncriptada.includes(matrizCodigo[i][0])) {
@@ -27,7 +27,6 @@ function encriptar(stringEncriptada) {
 
     
 }
-
 
 
 function btnDesencriptar() {
@@ -50,31 +49,31 @@ function desencriptar(stringDesencriptada) {
 }
 
 
-
-async function copiar() {
+function copiar() {
     mensaje.select();
-    try {
-        await navigator.clipboard.writeText(mensaje.value);
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Texto Copiado',
-            showConfirmButton: false,
-            timer: 1200,
-            width: '20rem',
-            height: '25rem',
-            padding: '1rem',
-            customClass: {
-                popup: 'my-popup-class'
-                
-            }
+    navigator.clipboard.writeText(mensaje.value)
+        .then(function() {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Texto Copiado',
+                showConfirmButton: false,
+                timer: 1200,
+                width: '20rem',
+                height: '25rem',
+                padding: '1rem',
+                customClass: {
+                    popup: 'my-popup-class'
+                    
+                }
+            });
+            mensaje.value = "";
+        })
+        .catch(function(error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error al copiar el texto',
+                text: error
+            });
         });
-        mensaje.value = "";
-    } catch (error) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Error al copiar el texto',
-            text: error
-        });
-    }
 }
