@@ -1,0 +1,43 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=DynaPuff:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave+Display&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave+Display&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=DynaPuff:wght@400;500;600;700&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sedgwick+Ave+Display&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icono.png" type="image/png">
+    <title>Encriptador de texto - </title>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <section>
+            <h2><span class="bordeado">JAIRO BRAYAN PEREZ CORDOVA</span></h2>
+            <div id="div-desaparece">
+                <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto..."></textarea>
+        
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>        
+        <section class="mensaje-box">
+            <textarea class="mensaje" cols="18" rows="8">
+                No hay mensaje
+            </textarea>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>

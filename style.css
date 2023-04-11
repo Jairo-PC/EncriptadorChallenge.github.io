@@ -1,0 +1,124 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,151,1) 100%); */
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+}
+
+
+main {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+} 
+
+.input-texto {
+    font-family: 'DynaPuff';
+    font-size: 35px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(253, 45, 97);
+    margin-top: 10px;
+    width: 800px;
+    border-radius: 10px;
+}
+
+.input-texto:focus {
+    
+    border-color:#000000; /* cambia el color de borde cuando se hace clic en la textarea */
+}
+
+h2{
+    text-align: center;
+    color:  rgba(45,253,151,1);
+    font-size: 50px;
+    font-family: 'Sedgwick Ave Display';
+
+}
+
+.bordeado {
+    text-decoration: none;
+    font-family: 'Sedgwick Ave Display';
+    text-shadow: -1px -1px 0 #000,  
+                2px -1px 0 #000,
+                -1px 1px 0 #000,
+                2px 1px 0 #000;
+}
+
+
+.mensaje {
+    font-family: 'DynaPuff';
+    font-size: 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-image: url("img/grafiti.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 250px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid rgb(253, 232, 45) ;
+    height: 480px;
+}
+
+.mensaje:focus {
+    
+    border-color:#000000; /* cambia el color de borde cuando se hace clic en la textarea */
+}
+
+.copiar {
+    font-family: 'Sedgwick Ave Display';
+    font-size: 30px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 170px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.encriptar {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(86, 225, 250);
+    margin-left: 220px;
+    color:white;
+    font-family: 'Sedgwick Ave Display';
+
+}
+
+.desencriptar {
+    background-color: rgb(253, 157, 79);
+    font-family: 'Sedgwick Ave Display';
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.informacion {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    font-family: 'DynaPuff';
+    font-size: 20px;
+    text-decoration: none;
+
+    text-shadow: -1px -1px 0 #ffffff,  
+                2px -1px 0 #ffffff,
+                -1px 1px 0 #ffffff,
+                2px 1px 0 #ffffff;
+}
